@@ -2,7 +2,11 @@ var pubs = require('../mock/pubs.json');
 var fs = require('fs');
 
 function listPubs(){
-  return pubs;
+  var arrayPubs = [];
+  pubs.forEach(function(element) {
+    arrayPubs.push(element);
+  });
+  return arrayPubs;
 }
 
 /*
