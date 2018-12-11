@@ -1,15 +1,15 @@
-var file = require('./pubs.json');
+var pubs = require('../mock/pubs.json');
 var fs = require('fs');
+
 function listPubs(){
-  var obj = JSON.parse(fs.readFileSync(file, 'utf8'));
-  var obj;
-  fs.readFile(file, 'utf8', function (err, data) {
-    if (err) throw err;
-    obj = JSON.parse(data);
-    console.log(obj);
-  });
+  pubs.forEach(function(element) {
+  console.log('pub name : ',element['name']);
+});
 }
 
+/*
+creer la methode en fonction des jours d'ouverture
+*/
 
 module.exports = {
   listPubs: listPubs
