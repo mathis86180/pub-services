@@ -1,6 +1,5 @@
-var pubService = require('./services/pubs.service');
-
-//console.log('xxxx', pubService.getListPub());
+const pubService = require('./services/pubs.service');
+console.log('xxxx', pubService.getListPubs());
 
 module.exports = {
 services: {
