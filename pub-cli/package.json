@@ -2,15 +2,15 @@
   "name": "pub-cli",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/main.js",
+  "bin":{
+    "pub-cli":"bin/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
-  "bin":{
-    "pub-cli":"bin/index.js"
+  "license": "ISC"
   },
   "preferGlobal": true,
   "dependencies": {

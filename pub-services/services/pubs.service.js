@@ -1,7 +1,7 @@
 var pubs = require('../mock/pubs.json');
 var fs = require('fs');
 
-function listPubs(){
+function getListPubs(){
   var arrayPubs = [];
   pubs.forEach(function(element) {
     arrayPubs.push(element);
@@ -14,5 +14,5 @@ creer la methode en fonction des jours d'ouverture
 */
 
 module.exports = {
-  listPubs: listPubs
+  getListPubs: getListPubs
 }
